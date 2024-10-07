@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pathway+Extreme:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: #000;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    margin: auto;
+}
+
+li{
+  list-style: none;
+}
+
+.max-width{
+    max-width: 1620px;
+}
+
+/* NAVBAR */
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav, .nav__textContainer, .nav__menu{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+
+.nav__logo img{
+    width: 100px;
+}
+.nav__icons img{
+    width: 25px;
+    margin: 0 5px;
+}
+
+a{
+    color: #fff;
+    font-family: "Pathway Extreme", sans-serif;
+    position: relative;
+}
+
+a::after{
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.877);
+    height: 1px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+a:hover::after{
+    width: 100%;
+}

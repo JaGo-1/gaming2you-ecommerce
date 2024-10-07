@@ -4,18 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuestros Productos</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/stylesArticulo.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="nav-menu">
-                <li><a href="index.html">Principal</a></li>
-                <li><a href="articulo.html">Productos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+        <header class="header">
+            <nav class="nav">
+                <div class="nav__textContainer">
+                    <div class="nav__logo">
+                        <!-- <p class="nav__logoText">Gaming2You</p> -->
+                        <img src="assets/img/logo.png" alt="logo gaming2you">
+                    </div>
+                    <ul class="nav__menu">
+                        <li class="nav__item"><a href="articulo.html">Productos</a></li>
+                        <li class="nav__item"><a href="index.html">Principal</a></li>
+                        <li class="nav__item"><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="nav__icons">
+                    <img src="assets/img/notificacion.webp" alt="">
+                    <img src="assets/img/user.webp" alt="">
+                    <img src="assets/img/cart.webp" alt="">
+                </div>
+            </nav>
+        </header>
 
     <main>
         <h1>Productos Disponibles</h1>
@@ -50,7 +61,41 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Tienda E-commerce</p>
+        <div class="footer__info">
+            <div class="footer__logos">
+                <p>Gaming2You</p>
+                <div class="social-icons">
+                    <img src="assets/img/fb-icon.png" alt="">
+                    <img src="assets/img/ig-icon.png" alt="">
+                </div>
+            </div>
+            <p>¡Sé el primero en recibir nuestras mejores ofertas!</p>
+            <button class="btn">Quiero Suscribirme!</button>
+            <div class="footer__ofertas"></div>
+        </div>
+        <div class="footer__infoLegal">
+            <ol>
+                <li>Aviso legal</li>
+                <li>Política de privacidad</li>
+                <li>Política de Cookies</li>
+                <li>Términos y condiciones</li>
+            </ol>
+        </div>
+        <div class="footer__atencionCliente">
+            <ol>
+                <li>0810-555-1234</li>
+                <li>consultas@gaming2you.com.ar</li>
+                <li>WhatsApp +54 11 1234-5678</li>
+                <li>Lunes a Viernes de 9 a 18hs.</li>
+            </ol>
+        </div>
+        <div class="footer__pago">
+            <p>Medios de pago aceptados</p>
+            <div class="medios_pago">
+                <img src="assets/img/tarjetas_.png" alt="">
+            </div>
+        </div>
+        </div>
     </footer>
 </body>
 </html>
