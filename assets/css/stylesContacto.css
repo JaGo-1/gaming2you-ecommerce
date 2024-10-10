@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pathway+Extreme:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pathway+Extreme:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 
 *{
     margin: 0;
@@ -20,10 +20,10 @@ li{
 
 .max-width{
     max-width: 1620px;
-}
+} */
 
 /* NAVBAR */
-
+/* 
 .nav{
     display: flex;
     justify-content: space-between;
@@ -63,4 +63,4 @@ a::after{
 
 a:hover::after{
     width: 100%;
-}
+} */

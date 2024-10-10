@@ -64,11 +64,47 @@ li a::after{
     width: 0;
     left: 0;
     bottom: -10px;
-    transition: 0.3s;
 }
 
 li a:hover::after{
     width: 100%;
+}
+
+/*CARRUSEL*/
+.main__carousel{
+    width: 100%;
+}
+.container{
+    position: relative;
+}
+
+#main__carousel-img{
+    transition: opacity 1s ease-in-out;
+    width: 100%;
+}
+
+.carousel-btn{
+    position: absolute;
+    top: 50%;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffffff38;
+    color: #e8e8e8;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+.carousel-btn:hover{
+    background-color: #ffffff67;
+}
+#btn-next{
+    right: 30px;
+}
+
+#btn-previous{
+    left: 30px
 }
 
 /* FOOTER */
