@@ -13,6 +13,7 @@ body{
     background-color: #000;
     color: #fff;
     font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
  
 }
 
@@ -24,6 +25,11 @@ li{
 
 .max-width{
     max-width: 1620px;
+}
+
+h2{
+    text-transform: uppercase;
+    font-size: 35px;
 }
 
 /* NAVBAR */
@@ -107,6 +113,78 @@ li a:hover::after{
     left: 30px
 }
 
+/* PRODUCTOS */
+.main__novedades, .main__ultimaCompra{
+  /*  background: #1e1e1e; */
+    background-repeat: no-repeat;
+    backdrop-filter: blur(70px);
+    background-size: cover;
+    border-radius: 20px;
+    padding: 50px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+}
+
+.main__novedades{
+    background-image: url(../img/bg-1.jpg);
+}
+
+.main__ultimaCompra{
+    background-image: url(../img/bg-2.jpg);
+}
+.cards{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cardContainer{
+    background-color: rgba(220, 220, 220, 0.049);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card-img{
+    width: 250px;
+    height: 250px;
+    background: rgb(255,255,255);
+    /* background: linear-gradient(180deg, rgba(255,255,255,1) 19%, rgba(191,191,191,1) 100%); */
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.card-description{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.card-price{
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 25px;
+
+}
+
+.cardContainer img{
+    height: 100%;
+}
+
+.main__publicidad img{
+    width: 100%;
+}
 /* FOOTER */
 .footer{
     background-color: #0A0A0A;
@@ -169,4 +247,9 @@ h3{
     border: none;
     border-radius: 50px;
     font-weight: 700;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #ff3434;
 }
