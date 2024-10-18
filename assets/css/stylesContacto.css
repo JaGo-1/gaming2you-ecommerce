@@ -1,66 +1,56 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pathway+Extreme:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-
 body{
-    background-color: #000;
-    color: #fff;
-    font-family: "Montserrat", sans-serif;
+    background-image: url(../img/contact-bg-cut.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    max-width: 650px;
     margin: auto;
+    padding-top: 50px;
+    text-align: center;
+    gap: 60px;
+    height: 100vh;
 }
 
-li{
-  list-style: none;
+.text p{
+    margin-top: 15px;
 }
 
-.max-width{
-    max-width: 1620px;
-} */
-
-/* NAVBAR */
-/* 
-.nav{
+form{
+    background-color: #131313f6;
+    border-radius: 10px;
     display: flex;
-    justify-content: space-between;
-}
-
-.nav, .nav__textContainer, .nav__menu{
-    display: flex;
+    flex-direction: column;
+    padding: 50px;
     gap: 30px;
     align-items: center;
 }
 
-
-.nav__logo img{
-    width: 100px;
-}
-.nav__icons img{
-    width: 25px;
-    margin: 0 5px;
-}
-
-a{
-    color: #fff;
-    font-family: "Pathway Extreme", sans-serif;
-    position: relative;
-}
-
-a::after{
-    content: "";
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.877);
-    height: 1px;
-    width: 0;
-    left: 0;
-    bottom: -10px;
-    transition: 0.3s;
-}
-
-a:hover::after{
+form input,
+form textarea{
+    border: none;
+    background-color: #0F0F0F;
+    padding: 20px;
     width: 100%;
-} */
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+
+.form-btn{
+    width: 200px;
+    text-transform: uppercase;
+}
+
+input:focus,
+textarea:focus{
+    outline: 1px solid #313131;
+}
+
+textarea{
+    resize: none;
+    height: 150px; 
+}
+

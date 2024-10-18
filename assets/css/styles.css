@@ -37,6 +37,8 @@ h2{
 .nav{
     display: flex;
     justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .nav, .nav__textContainer, .nav__menu{
@@ -206,7 +208,7 @@ li a:hover::after{
 }
 
 h3{
-    color: #FA0000;
+    color: #820000;
     font-weight: 400;
 }
 
@@ -241,7 +243,7 @@ h3{
 
 /* BUTTON */
 .btn{
-    background-color: #FA0000;
+    background-color: #820000;
     color: #fff;
     padding: 10px;
     border: none;
@@ -251,5 +253,5 @@ h3{
 }
 
 .btn:hover{
-    background-color: #ff3434;
+    background-color: #a50202;
 }
