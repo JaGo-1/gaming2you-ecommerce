@@ -1,5 +1,5 @@
 body{
-    background-image: url(../img/contact-bg-cut.jpg);
+    background-image: url(../img/contact-bg-cut.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -12,21 +12,22 @@ main{
     padding-top: 50px;
     text-align: center;
     gap: 60px;
-    height: 100vh;
+    
+    margin-bottom:70px;
 }
 
 .text p{
     margin-top: 15px;
 }
 
-form{
+.contenedor{
     background-color: #131313f6;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     padding: 50px;
     gap: 30px;
-    align-items: center;
+    align-items: left;
 }
 
 form input,
@@ -54,3 +55,13 @@ textarea{
     height: 150px; 
 }
 
+span{
+    text-align: left;
+    font-size: 14px;
+    color: #c70707;
+    display: none;
+}
+
+.form-result{
+    display: none;
+}

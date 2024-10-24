@@ -19,12 +19,17 @@ body{
 
 .m-auto{   margin: auto;}
 
+.bold{
+    font-weight: bold;
+}
+
 li{
   list-style: none;
 }
 
 .max-width{
     max-width: 1620px;
+    padding: 0 40px;
 }
 
 h2{

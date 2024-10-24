@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Contacto</title>
+    <link rel="icon" href="assets/img/logo-2.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/stylesContacto.css">
 </head>
@@ -38,22 +39,30 @@
             <p>Escribenos y responderemos en brevedad.</p>
         </div>
 
-        <form id="contact-form">
-            <!-- <label for="name">Nombre:</label> -->
-            <input type="text" id="name" name="name" maxlength="50" required placeholder="Ingresa tu nombre">
+        <form class="contenedor" id="contact-form">
 
-            <!-- <label for="email">Correo Electrónico:</label> -->
+            <input type="text" id="name" name="name" maxlength="50" required placeholder="Ingresa tu nombre"><span
+                class="span-nombre">*
+                Campo inválido</span>
+
             <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                placeholder="Ingresa tu apellido">
-            <!-- 
-            <label for="phone">Teléfono:</label> -->
-            <input type="tel" id="phone" name="phone" required pattern="\d{10}"
-                placeholder="Ingresa un teléfono de contacto">
+                placeholder="Ingresa tu apellido"><span class="span-email">* Campo inválido</span>
 
-            <textarea name="message" id="" placeholder="Déjanos tu mensaje"></textarea>
+            <input type="tel" id="phone" name="phone" required pattern="\d{10}"
+                placeholder="Ingresa un teléfono de contacto"><span class="span-telefono">* Campo inválido</span>
+
+            <textarea name="message" id="" placeholder="Déjanos tu mensaje"></textarea><span class="span-mensaje">*
+                Campo inválido</span>
             <button class="form-btn btn" type="submit">Enviar</button>
         </form>
-        <div id="form-result"></div>
+        <div class="contenedor form-result" id="form-result">
+            <h1>¡Gracias por contactarte con nosotros!</h1>
+            <p>Puedes controlar tus datos aquí</p>
+            <ul>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
     </main>
 
     <footer class="footer">

@@ -1,65 +1,75 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pathway+Extreme:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+.main{
+    margin-bottom: 70px;
 }
 
-body{
-    background-color: #000;
-    color: #fff;
-    font-family: "Montserrat", sans-serif;
-    margin: auto;
+.main__products{
+    display: grid;
+    grid-template-columns: 250px 1fr; 
+    gap: 20px;
 }
 
-li{
-  list-style: none;
-}
-
-.max-width{
-    max-width: 1620px;
-}
-
-
-.nav{
+.main__filtro{
     display: flex;
-    justify-content: space-between;
-}
-
-.nav, .nav__textContainer, .nav__menu{
-    display: flex;
-    gap: 30px;
+    justify-content: end;
     align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
 }
 
-
-.nav__logo img{
-    width: 100px;
-}
-.nav__icons img{
-    width: 25px;
-    margin: 0 5px;
-}
-
-a{
-    color: #fff;
-    font-family: "Pathway Extreme", sans-serif;
+.custom-select {
     position: relative;
+    display: inline-block;
+    width: 130px;
 }
 
-a::after{
-    content: "";
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.877);
-    height: 1px;
-    width: 0;
-    left: 0;
-    bottom: -10px;
-    transition: 0.3s;
-}
-
-a:hover::after{
+.filtro {
     width: 100%;
-} */
+    appearance: none; 
+    border: none;
+    outline: 1px solid  rgb(85, 85, 85);
+    padding: 8px;
+    background-color:transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+.custom-select::after {
+    content: "▾";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #fff;
+}
+
+.custom-select:hover .filtro {
+    background-color: rgb(53,53,53);
+    outline: 1px solid  rgb(85, 85, 85);
+}
+
+.main__sideBar{
+    background-color: rgb(10, 10, 10);
+    padding: 30px;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+.main__sideBar p{
+    margin-bottom: 20px;
+}
+
+.sideBar-item:not(:last-child) {
+    margin-bottom: 15px; 
+}
+
+.product-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: 10px;
+}
+
+
+
+
