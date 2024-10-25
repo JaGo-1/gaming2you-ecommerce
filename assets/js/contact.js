@@ -44,25 +44,12 @@ document.getElementById('contact-form').addEventListener('submit', function(even
         messageError.style.display = 'none';
     }
 
-    // Si todo es válido, muestra el mensaje de éxito
-    //if (formValid) {
-        //document.getElementById('form-result').style.display = 'block';
-        //const resultList = document.querySelector('#form-result ul');
-       // resultList.innerHTML = `
-       //     <li>Nombre: ${nameField.value}</li>
-       //     <li>Email: ${emailField.value}</li>
-       //     <li>Teléfono: ${phoneField.value}</li>
-       //     <li>Mensaje: ${messageField.value}</li>
-      //  `;
-  //  } else {
-    //    document.getElementById('form-result').style.display = 'none';
-    //}
 
     // Mostrar los errores en la página si hay alguno
     if (!formValid) {
         const errorDiv = document.getElementById('form-result');
-        errorDiv.style.display = 'block';
-        errorDiv.innerHTML = '<h2>Errores encontrados:</h2><ul></ul>';
+        //errorDiv.style.display = 'block';
+        //errorDiv.innerHTML = '<h2>Errores encontrados:</h2><ul></ul>';
         const errorList = errorDiv.querySelector('ul');
 
         errors.forEach(function(error) {

@@ -39,16 +39,16 @@
             <p>Escribenos y responderemos en brevedad.</p>
         </div>
 
-        <form class="contenedor" id="contact-form">
+        <form class="contenedor" id="contact-form" novalidate>
 
-            <input type="text" id="name" name="name" maxlength="50" required placeholder="Ingrese su nombre y apellido"><span
+            <input type="text" id="name" name="name" placeholder="Ingrese su nombre y apellido"><span
                 class="span-nombre">*
                 Campo inválido</span>
 
-            <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            <input type="email" id="email" name="email" 
                 placeholder="Ingrese su email"><span class="span-email">* Campo inválido</span>
 
-            <input type="tel" id="phone" name="phone" required pattern="\d{10}"
+            <input type="tel" id="phone" name="phone" 
                 placeholder="Ingresa un teléfono de contacto"><span class="span-telefono">* Campo inválido</span>
 
             <textarea name="message" id="" placeholder="Déjanos tu mensaje"></textarea><span class="span-mensaje">*
