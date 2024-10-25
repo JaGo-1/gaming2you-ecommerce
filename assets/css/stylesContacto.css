@@ -40,9 +40,11 @@ form textarea{
     font-family: "Montserrat", sans-serif;
 }
 
+
 .form-btn{
     width: 200px;
     text-transform: uppercase;
+    align-self: center;
 }
 
 input:focus,

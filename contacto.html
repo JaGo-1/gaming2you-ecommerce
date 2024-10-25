@@ -41,12 +41,12 @@
 
         <form class="contenedor" id="contact-form">
 
-            <input type="text" id="name" name="name" maxlength="50" required placeholder="Ingresa tu nombre"><span
+            <input type="text" id="name" name="name" maxlength="50" required placeholder="Ingrese su nombre y apellido"><span
                 class="span-nombre">*
                 Campo inválido</span>
 
             <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                placeholder="Ingresa tu apellido"><span class="span-email">* Campo inválido</span>
+                placeholder="Ingrese su email"><span class="span-email">* Campo inválido</span>
 
             <input type="tel" id="phone" name="phone" required pattern="\d{10}"
                 placeholder="Ingresa un teléfono de contacto"><span class="span-telefono">* Campo inválido</span>
@@ -76,7 +76,7 @@
                     </div>
                 </div>
                 <p>¡Sé el primero en recibir nuestras mejores ofertas!</p>
-                <button class="btn">Quiero Suscribirme!</button>
+                <button class="btn" onclick="window.location.href='contacto.html'">Quiero Suscribirme!</button>
                 <div class="footer__ofertas"></div>
             </div>
             <div class="footer__infoLegal footer__info-text">
@@ -108,7 +108,7 @@
         </div>
     </footer>
 
-    <script src="form-validation.js"></script>
+    <script src="assets/js/contact.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 //CARRUSEL
-
+console.log("Hola");
 const imagenes = [
   "/assets/img/banner_1.webp",
   "/assets/img/banner_2.png",
