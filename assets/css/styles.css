@@ -108,6 +108,9 @@ li a:hover::after{
     font-weight: bold;
     font-size: 20px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .carousel-btn:hover{
     background-color: #ffffff67;
@@ -189,9 +192,18 @@ li a:hover::after{
     height: 100%;
 }
 
-.main__publicidad img{
+/* .main__publicidad img{
     width: 100%;
-}
+} */
+
+/* .main__publicidad {
+    background-image: url('../img/banner_4.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+} */
+
 /* FOOTER */
 .footer{
     background-color: #0A0A0A;
@@ -223,15 +235,15 @@ h3{
     gap: 40px;
 }
 
-.footer__info button{
-    max-width: 200px;
+.social-icons i {
+    font-size: 1.5rem;
+    margin: 10px;
 }
 
 .footer__info-text,
 .footer__info-text ol{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
 }
 
 .footer__info-text{
@@ -244,6 +256,10 @@ h3{
 
 .medios_pago{
     margin: 20px;
+}
+
+.footer__pago{
+    margin-top: 30px;
 }
 
 /* BUTTON */
@@ -259,4 +275,60 @@ h3{
 
 .btn:hover{
     background-color: #a50202;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px){
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+    .main__novedades, .main__ultimaCompra{
+        padding: 3rem;
+    }
+
+    .cardContainer{
+        width: 100%;
+    }
+
+    .card-img{
+        width: 100%;
+    }
+
+    .card-description{
+        font-size: 0.8rem;
+    }
+
+    .card-price{
+        font-size: 20px;
+    }
+
+    .footer__content, .footer__info, .footer__logos{
+        gap: 20px;
+        justify-content: center;
+    }
+
+    
+
+
+    .footer__info-text{
+        gap: 10px;
+    }
+
+    .footer__info-text ol{
+        gap: 5px;
+    }
+
+    .medios_pago{
+        margin: 10px;
+    }
+}
+
+/* Large devices */
+
+@media screen and (min-width: 950px) {
+    .footer__info button{
+        width: 200px;
+    }
 }

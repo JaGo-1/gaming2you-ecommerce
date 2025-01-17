@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Contacto</title>
     <link rel="icon" href="assets/img/logo-2.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/stylesContacto.css">
 </head>
@@ -26,9 +27,19 @@
                 </ul>
             </div>
             <div class="nav__icons">
-                <img src="assets/img/notificacion.webp" alt="">
-                <img src="assets/img/user.webp" alt="">
-                <img src="assets/img/cart.webp" alt="">
+                <!-- <span class="material-symbols-outlined">
+                    notifications
+                </span>
+                <span class="material-symbols-outlined">
+                    person
+                </span>
+                <span class="material-symbols-outlined">
+                    shopping_cart
+                </span> -->
+
+                <i class="fa-solid fa-bell"></i>
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
             </div>
         </nav>
     </header>
@@ -45,11 +56,11 @@
                 class="span-nombre">*
                 Campo inválido</span>
 
-            <input type="email" id="email" name="email" 
-                placeholder="Ingrese su email"><span class="span-email">* Campo inválido</span>
+            <input type="email" id="email" name="email" placeholder="Ingrese su email"><span class="span-email">* Campo
+                inválido</span>
 
-            <input type="tel" id="phone" name="phone" 
-                placeholder="Ingresa un teléfono de contacto"><span class="span-telefono">* Campo inválido</span>
+            <input type="tel" id="phone" name="phone" placeholder="Ingresa un teléfono de contacto"><span
+                class="span-telefono">* Campo inválido</span>
 
             <textarea name="message" id="" placeholder="Déjanos tu mensaje"></textarea><span class="span-mensaje">*
                 Campo inválido</span>
@@ -71,8 +82,8 @@
                 <div class="footer__logos">
                     <img src="assets/img/logo-gr-cut.png" alt="">
                     <div class="social-icons">
-                        <img src="assets/img/fb-icon.png" alt="">
-                        <img src="assets/img/ig-icon.png" alt="">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
                     </div>
                 </div>
                 <p>¡Sé el primero en recibir nuestras mejores ofertas!</p>
@@ -108,6 +119,7 @@
         </div>
     </footer>
 
+    <script src="https://kit.fontawesome.com/3ce7d00509.js" crossorigin="anonymous"></script>
     <script src="assets/js/contact.js"></script>
 </body>
 

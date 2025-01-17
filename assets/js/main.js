@@ -1,8 +1,8 @@
 //CARRUSEL
 const imagenes = [
   "/assets/img/banner_1.webp",
-  "/assets/img/banner_2.png",
-  "/assets/img/banner_3.png",
+  "/assets/img/banner_2.webp",
+  "/assets/img/banner_3.webp",
 ];
 let i = 0;
 let img = document.getElementById("main__carousel-img");
