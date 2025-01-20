@@ -12,34 +12,39 @@
 </head>
 
 <body class="body">
-    <header class="header m-auto max-width">
+    <header class="header m-auto ">
         <nav class="nav">
-            <div class="nav__textContainer">
+            <div class="logo">
+                <label for="check" class="open-menu">
+                    <i class="open-menu fa-solid fa-bars"></i>
+                </label>
                 <div class="nav__logo">
                     <a href="index.html">
                         <img src="assets/img/logo.png" alt="logo gaming2you">
                     </a>
                 </div>
-                <ul class="nav__menu">
-                    <li class="nav__item"><a href="index.html">Principal</a></li>
-                    <li class="nav__item"><a href="articulo.html">Productos</a></li>
-                    <li class="nav__item"><a href="contacto.html">Contacto</a></li>
-                </ul>
             </div>
-            <div class="nav__icons">
-                <!-- <span class="material-symbols-outlined">
-                    notifications
-                </span>
-                <span class="material-symbols-outlined">
-                    person
-                </span>
-                <span class="material-symbols-outlined">
-                    shopping_cart
-                </span> -->
 
-                <i class="fa-solid fa-bell"></i>
-                <i class="fa-solid fa-user"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
+            <input type="checkbox" id="check">
+
+            <div class="menu">
+                <div class="nav__textContainer">
+                    <ul class="nav__menu">
+                        <li class="nav__item"><a href="index.html">Principal</a></li>
+                        <li class="nav__item"><a href="articulo.html">Productos</a></li>
+                        <li class="nav__item"><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="nav__icons">
+                <div class="iniciar-sesion">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
             </div>
         </nav>
     </header>
