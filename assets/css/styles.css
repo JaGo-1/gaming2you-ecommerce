@@ -49,7 +49,7 @@ h2{
     text-transform: uppercase;
     font-weight: 600;
     position: relative;
-    /* z-index: 100; */
+    z-index: 100;
 }
 
 
@@ -115,7 +115,6 @@ li a:hover::after{
 }
 .container{
     position: relative;
-    z-index: -2;
 }
 
 #main__carousel-img{
@@ -138,6 +137,7 @@ li a:hover::after{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 10;
 }
 .carousel-btn:hover{
     background-color: #ffffff67;
@@ -183,7 +183,6 @@ li a:hover::after{
     background-color: rgba(220, 220, 220, 0.049);
     backdrop-filter: blur(8px);
     border-radius: 10px;
-    width: 300px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -191,10 +190,8 @@ li a:hover::after{
 }
 
 .card-img{
-    width: 250px;
     height: 250px;
     background: rgb(255,255,255);
-    /* background: linear-gradient(180deg, rgba(255,255,255,1) 19%, rgba(191,191,191,1) 100%); */
     border-radius: 10px;
     margin-bottom: 30px;
     padding: 30px;
@@ -305,6 +302,10 @@ h3{
 }
 
 /* MEDIA QUERIES */
+@media screen and (max-width: 369px){
+
+}
+
 @media screen and (max-width: 769px){
 
     /*Navbar*/
