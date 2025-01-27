@@ -9,11 +9,10 @@ main{
     flex-direction: column;
     max-width: 650px;
     margin: auto;
-    padding-top: 50px;
+    padding-top: 100px;
     text-align: center;
     gap: 60px;
-    
-    margin-bottom:70px;
+    margin-bottom:120px;
 }
 
 .text p{
@@ -25,9 +24,10 @@ main{
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    padding: 50px;
+    padding: 40px;
     gap: 30px;
     align-items: left;
+    margin: 0 30px;
 }
 
 form input,
@@ -59,11 +59,38 @@ textarea{
 
 span{
     text-align: left;
-    font-size: 14px;
+    font-size: 0.8rem;
     color: #c70707;
     display: none;
 }
 
 .form-result{
     display: none;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 769px){
+    main{
+        padding-top: 250px;
+    }
+    .text{
+        margin: 0 40px
+    }
+}
+
+@media screen and (max-width: 579px){
+    .text h1{
+        font-size: 1.5rem;
+    }
+
+    .text p{
+        font-size: 0.9rem;
+    }
+
+    form input::placeholder,
+    form textarea::placeholder, 
+    span {
+        font-size: 0.7rem;
+    }
 }
